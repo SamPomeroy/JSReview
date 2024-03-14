@@ -73,15 +73,14 @@ const multiplicationArray = function (array) {
     return item;
 };
 
-const divisionArray = function (array1, array2) {
-    if (array1.length !== array2.length) {
-        return "Must be the same length.";
+const divisionArray = function (array) {
+    let accumulator = array[0]
+      for (let i = 1; i < array.length; i++) {
+       accumulator /= array[i]
       }
-      const resultArray = [];
-      for (let i = 0; i < array1.length; i++) {
-        resultArray.push(array1[i] / array2[i]);
-      }
-      return resultArray.toFixed(3);
+      result = accumulator.toFixed(3);
+      return +result
+      //parseFloat(result)
 };
 
 const oddArray = function (array) {
