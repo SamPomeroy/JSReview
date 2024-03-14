@@ -4,7 +4,7 @@ returnEmptyString,
 returnZeroNumber,
 returnEmptyArray,
 returnEmptyObject,
-returnAbcString,
+returnString,
 addition,
 subtraction,
 multiplication,
@@ -19,8 +19,8 @@ multiplicationArray,
 divisionArray,
 oddArray,
 evenArray,
-returnFruits
-} = require('./functions')
+
+} = require('./main')
 
 describe("returnEmptyString", function () {
   it("should return an empty string", function () {
